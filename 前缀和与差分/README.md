@@ -36,7 +36,7 @@ int main()
 
 ## 二维前缀和
 
-```
+```txt
 S[i, j] = 第i行j列格子左上部分所有元素的和
 以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵的和为：
 S[x2, y2] - S[x1 - 1, y2] - S[x2, y1 - 1] + S[x1 - 1, y1 - 1]
@@ -76,4 +76,12 @@ int main()
   }
 }
 ```
+
+## 差分
+
+差分与前缀和是一对逆运算，通过构造差分数组b[n]，使得a[i]=b[1]+b[2]+...+b[i]
+
+例：[acwing-797](https://www.acwing.com/problem/content/description/799/)
+
+
 
